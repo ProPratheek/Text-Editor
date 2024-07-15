@@ -1,0 +1,133 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  background-color: #7de3ab;
+  font-family: "Poppins", sans-serif; /* Adding Google Font */
+}
+
+/* Container styles */
+.container {
+  background-color: #ffffff;
+  width: 90vmin;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+
+/* Options panel styles */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Button styles */
+button {
+  height: 25px;
+  width: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: #020929;
+  cursor: pointer;
+}
+
+/* Select styles */
+select {
+  padding: 7px;
+  border: 1px solid #020929;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Label and select styles */
+.options label,
+.options select {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Color input wrapper styles */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Color input styles */
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  width: 40px;
+  height: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Color swatch styles */
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border-radius: 15px;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+/* Save button styles */
+#saveButton {
+  margin-top: 10px;
+  padding: 15px 30px; /* Increased padding for larger button */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 18px; /* Increased font size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 150px; /* Optional: Minimum width for the button */
+}
+
+#saveButton:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Text input area styles */
+#text-input {
+  margin-top: 10px;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  height: 50vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-y: auto;
+}
+
+/* Active state for buttons */
+.active {
+  background-color: #e0e9ff;
+}
+
+
